@@ -1,0 +1,452 @@
+@charset "utf-8";
+/*CSS Document*/
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #222328;
+}
+body{
+    width: 1000px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+header{
+    float: left;
+    position: absolute;
+}
+.top{
+    float: left;
+    height: 650px;
+    width: 200px;
+    background-color: #eeeeee;
+}
+.bodywrap{
+    float: right;
+    height: 550px;
+    width: 800px;
+}
+.imgslide{
+    height: 350px;
+    width: 800px;
+    position: relative;
+}
+.imgslide>a{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition:all 3s;
+}
+.imgtext{
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    margin: -25px 0 0 -150px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: rgba(40,40,40,0.3);
+    left: 50%;
+    top: 50%;
+}
+.contents{
+    float: right;
+    height: 200px;
+    width: 800px;
+    position: absolute;
+    
+}
+footer{
+    float: right;
+    height: 100px;
+    width: 800px;
+    
+}
+.bottom{
+    float: left;
+    height: 100px;
+    width: 800px;
+    background-color: #cccccc;
+    position: absolute;
+}
+
+.logo{
+    float: left;
+    height: 40px;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.logo img{
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.menu{
+    width: 180px;
+    top: 100px;
+    left: 10px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+.navi>li{
+    width: 180px;
+    display: block;
+    
+}
+.navi>li>a{
+    height: 40px;
+    width: 180px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #222328;
+    color: #ffffff;
+}
+.navi>li>a:hover{
+    background-color: #930930;
+    color: #ffff00;
+    
+}
+.submenu{
+    float: left;
+    width: 180px;
+    height: 100%;
+    left: 180px;
+    top: 0px;
+    position: absolute;
+    background-color: #cccccc;
+    display: none;
+    z-index: 1;
+}
+.submenu>li>a{
+    height: 40px;
+    width: 180px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #cccccc;
+    color: #ffffff;
+}
+.submenu>li>a:hover{
+    background-color: #999999;
+    color: #ffff00;
+}
+.tabmenu{
+    float: left;
+    height: 180px;
+    width: 290px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.tabmenu>li{
+    float: left;
+    width: 80px;
+    line-height: 30px;
+}
+.tabmenu>li>a{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    background-color: #cccccc;
+    border: 1px solid #dddddd;
+    border-bottom: none;
+}
+.tabmenu>li>a:hover{
+    background-color: #eeeeee;
+}
+.tabmenu>li.active>a{
+    background-color: #ffffff;
+}
+.tabmenu>li div{
+    position: absolute;
+    left: 5px;
+    height: 0;
+    overflow: hidden;
+}
+.tabmenu>li.active div{
+    width: 288px;
+    height: 148px;
+    border: 1px solid #dddddd;
+    z-index: 1;
+}
+.notice ul{
+    float: left;
+    width: 288px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.notice li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.notice li:nth-child(2n){
+    background-color: #cccccc;
+}
+.notice li span{
+    float: right;
+}
+.notice li:hover{
+    font-weight: bold;
+}
+.gallery li{
+    float: left;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.gallery img{
+    height: 90px;
+    width: 70px;
+    padding: 10px;
+}
+.gallery li:hover{
+    opacity: 0.5;
+}
+.otherwrap{
+    float: right;
+    height:180px;
+    width: 500px;
+    
+}
+.banner{
+    float: left;
+    height: 180px;
+    width: 295px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner img{
+    float: left;
+    height: 180px;
+    width: 295px;
+}
+.banner img:hover{
+    opacity: 0.5;
+}
+.bntext{
+    float: left;
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    left: 350px;
+    top: 80px;
+}
+.shortcut{
+    float: right;
+    height: 180px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.shortcut img{
+    float: right;
+    height: 180px;
+    width: 200px;
+}
+.sctext{
+    float: right;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    left: 650px;
+    top: 80px;
+    
+}
+.sctext:hover{
+    opacity: 0.5;
+    opacity: 0.5;
+}
+.btlogo{
+    float: left;
+    height: 100px;
+    width: 200px;
+}
+.btlogo img{
+    float: left;
+    height: 34px;
+    width: 170px;
+    margin-top: 33px;
+    margin-left: 15px;
+}
+.site{
+    float: right;
+    height: 100px;
+    width: 600px;
+}
+.btmenu{
+    height: 50px;
+    width: 600px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+.btmenu li{
+    margin-top: 10px;
+    display: inline-block;
+    width: 100px;
+}
+.btmenu li:hover{
+    font-weight: bold;
+}
+.copy{
+    height: 50px;
+    width: 600px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+    
+}
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: none;
+}   
+#modal.active{
+    display: block;
+}
+.modal_up{
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    left: 40%;
+    top: 40%;
+    background-color: #ffffff;
+}  
+.uptitle{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upbody{
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+.btn{
+    height: 20px;
+    width: 80px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #cccccc;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
